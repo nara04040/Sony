@@ -23,6 +23,11 @@ $(document).ready(function() {
 
     // swiper
     new Swiper('.sw-container',{ 
-        loop: true
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: 'fraction',
+        },
     })
+
 })
