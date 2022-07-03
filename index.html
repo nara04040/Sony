@@ -36,6 +36,9 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
     <!-- prefix -->
     <script src="js/prefixfree.min.js"></script>
     <!--[if lt IE 9]> 
@@ -63,11 +66,11 @@
                 <div class="header-gnb">
                     <ul class="menu-list">
                         <li><a href="#">스토어 추천 제품</a>
-                        <ul class="sub-menu-list">
-                            <li><a href="#">추천 제품</a></li>
-                            <li><a href="#">선물 제안</a></li>
-                        </ul>
-                    </li>
+                            <ul class="sub-menu-list">
+                                <li><a href="#">추천 제품</a></li>
+                                <li><a href="#">선물 제안</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">제품</a>
                             <ul class="sub-menu-list">
                                 <li><a href="#">카메라</a></li>
@@ -99,7 +102,8 @@
                                 <li><a href="#">구매 상담</a></li>
                                 <li><a href="#">직영점 안내</a></li>
                                 <li><a href="#">동영상 강좌</a></li>
-                            </ul></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="header-ico">
@@ -114,7 +118,39 @@
             <div class="main-wrap">
                 <!-- visual -->
                 <div class="visual">
-                    <!-- swiper 5개 다 동영상 -->
+                    <div class="visual-wrap">
+                        <!-- swiper 5개 다 동영상 -->
+                        <div class="swiper-container sw-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/1214_SONY_A7M4_60s.mp4"
+                                        class="visual-slide-play"></video>
+                                    <div></div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/220613_WH-1000XM5_10sec.mp4" class="visual-slide-play"></video>
+                                    <div></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/220401_Linkbuds_10sec.mp4" class="visual-slide-play"></video>
+                                    <div></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/220428_a1_60sec.mp4" class="visual-slide-play"></video>
+                                    <div></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/1214_SONY_A7M4_60s.mp4" class="visual-slide-play"></video>
+                                    <div></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://image.sony.co.kr/newStore/video/220613_WH-1000XM5_10sec.mp4" class="visual-slide-play"></video>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- signature -->
                 <div class="signature">
