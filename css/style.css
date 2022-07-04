@@ -137,6 +137,7 @@ body {
     background-color: #000;
     z-index: 99;
     height: 80px;
+    /* overflow: hidden; */
 }
 
 .header-wrap {
@@ -166,28 +167,64 @@ body {
     display: block;
     width: 1000px;
     margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.header-gnb::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    width: 100vw;
+    height: 0;
     background-color: #000;
+    visibility: hidden;
+    transition: top 0.2s, height 0.2s;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-gnb:hover::before {
+    /* padding: 1.4em 0 2.6em; */
+    top: 80px;
+    height: calc(100% - 80px);
+    visibility: visible;
+}
+
+.header-gnb:hover .sub-event-swiper {
+    visibility: visible;
+    margin-top: 0;
 }
 
 .menu-list {
     position: relative;
+    display: table;
+    table-layout: fixed;
+    /* height: 80px; */
+}
+
+.menu-list>li>a {
     display: block;
     height: 80px;
+    /* background-color: red; */
+
 }
 
 .menu-list>li:hover>a {
     color: #5865f5;
+    border-bottom: 2px solid #5865f5;
 }
 
-.menu-list>li:hover .sub-menu-list {
-    border-top: 1px solid #5865f5;
+.menu-list>li:hover .sub-menu-list {}
+
+.menu-list>li:hover {
+    background-color: #111;
 }
 
 .menu-list li {
-    display: block;
-    float: left;
+    display: table-cell;
+    /* float: left; */
     width: 200px;
-
 }
 
 .menu-list li a {
@@ -195,43 +232,53 @@ body {
     color: #fff;
     text-align: center;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     padding: 29px 0;
     transition: color 0.5s;
 }
 
-.header-show {
+/* .header-show {
     height: 40%;
+} */
+
+.header-gnb:hover .sub-menu-list {
+    padding: 20px 0;
+    visibility: visible;
 }
 
 .sub-menu-list {
     position: relative;
     display: block;
+    height: 100%;
+    padding: 0;
+    transition: padding 0.2s;
     visibility: hidden;
-    display: none;
+    /* transition: margin 0.2s; */
 }
 
-.sub-menu-show {
+/* .sub-menu-show {
     display: block;
     visibility: visible;
     height: 100%;
-}
+} */
 
 .sub-menu-list li:hover a {
     color: #5865f5;
 }
 
 .sub-menu-list li {
-    transition: all 0.5s;
+    width: 100%;
+    display: block;
+    transition: all 0.1s;
 }
 
 .sub-menu-list li a {
     display: block;
-    padding: 10px 0;
+    padding: 15px 0;
     font-weight: 300;
-    margin: 5px 0;
-    font-size: 20px;
+    line-height: 1.4;
+    font-size: 19px;
     color: #ccc;
 }
 
@@ -306,7 +353,6 @@ body {
 .visual-wrap {
     width: 100%;
     height: 100%;
-    background-color: blue;
 }
 
 .sw-container {

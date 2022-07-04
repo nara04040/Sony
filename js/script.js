@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    return 0;
     menuList = $('.menu-list');
     header = $('.header')
     subMenu = $('.sub-menu')
