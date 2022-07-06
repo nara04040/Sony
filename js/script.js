@@ -24,10 +24,22 @@ $(document).ready(function() {
     // swiper
     new Swiper('.sw-container',{ 
         loop: true,
+        navigation: {
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
         pagination: {
             el: ".swiper-pagination",
             type: 'fraction',
         },
     })
+    // 마우스 따라다니기
+    const arrowBtn = document.querySelector('.swiper-button-next');
 
+    document.addEventListener('mousemove', (e) =>{
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        arrowBtn.style.left = mouseX + 'px';
+        arrowBtn.style.top = mouseY + 'px';
+    })
 })
