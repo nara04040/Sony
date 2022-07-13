@@ -60,22 +60,22 @@
     <div class="wrap">
         <!-- header -->
         <header class="header">
-            <div class="header-wrap">
-                <div class="header-logo">
-                    <a href="#">
-                        <img src="images/logo.cae2c042.svg" alt="">
-                    </a>
-                </div>
-                <div class="header-gnb">
-                    <ul class="menu-list clearfix">
-                        <li><a href="#">스토어 추천 제품</a>
-                            <ul class="sub-menu-list clearfix">
-                                <li><a href="#">추천 제품</a></li>
-                                <li><a href="#">선물 제안</a></li>
+            <div class="inner">
+                <a href="#" class="logo"><img src="images/logo.cae2c042.svg" alt=""> Sony</a>
+                <nav class="gnb">
+                    <ul class="depth1 clearfix">
+                        <li>
+                            <a href="#">스토어 추천 제품</a>
+                            <ul class="depth2 clearfix">
+                                <li>
+                                    <a href="#">추천 제품</a>
+                                    <a href="#">선물 제안</a>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#">제품</a>
-                            <ul class="sub-menu-list clearfix">
+                        <li>
+                            <a href="#">제품</a>
+                            <ul class="depth2 clearfix">
                                 <li><a href="#">카메라</a></li>
                                 <li><a href="#">비디오 카메라</a></li>
                                 <li><a href="#">오디오</a></li>
@@ -83,22 +83,25 @@
                                 <li><a href="#">PlayStation®</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">기획전</a>
-                            <ul class="sub-menu-list clearfix">
+                        <li>
+                            <a href="#">기획전</a>
+                            <ul class="depth2 clearfix">
                                 <li><a href="#">소니스토어 단독</a></li>
                                 <li><a href="#">혜택존</a></li>
                                 <li><a href="#">예약판매</a></li>
-                                <li><a href="#">정품등록 이벤터</a></li>
+                                <li><a href="#">정품등록 이벤트</a></li>
                                 <li><a href="#">LIVE ON</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">멤버십</a>
-                            <ul class="sub-menu-list clearfix">
+                        <li>
+                            <a href="#">멤버십</a>
+                            <ul class="depth2 clearfix">
                                 <li><a href="#">등급&혜택 안내</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">고객 서비스</a>
-                            <ul class="sub-menu-list clearfix">
+                        <li>
+                            <a href="#">고객서비스</a>
+                            <ul class="depth2 clearfix">
                                 <li><a href="#">FAQ&공지사항</a></li>
                                 <li><a href="#">정품등록 안내</a></li>
                                 <li><a href="#">제품 지원</a></li>
@@ -107,12 +110,13 @@
                                 <li><a href="#">동영상 강좌</a></li>
                             </ul>
                         </li>
+
                     </ul>
-                </div>
-                <div class="header-ico">
-                    <button class="search-btn"></button>
-                    <button class="login-btn"></button>
-                    <a href="#" class="cart-btn"></a>
+                </nav>
+                <div class="menu">
+                    <button class="search-btn">Search</button>
+                    <button class="login-btn">Login</button>
+                    <a href="#" class="cart-link">cart</a>
                 </div>
             </div>
         </header>
@@ -123,7 +127,7 @@
                 <div class="visual">
                     <div class="visual-wrap">
                         <!-- swiper 5개 다 동영상 -->
-                        <div class="swiper-container sw-container">
+                        <div class="swiper-container sw-visual ">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <video src="https://image.sony.co.kr/newStore/video/1214_SONY_A7M4_60s.mp4"
@@ -160,7 +164,6 @@
                     <div class="signature-wrap clearfix">
                         <div class="sig-swiper-pic swiper-container">
                             <div class="sig-wrapper swiper-wrapper">
-                                <!-- swiper 4개 동시에돌아감-->
                                 <div class="swiper-slide sw-slide-1"></div>
                                 <div class="swiper-slide sw-slide-2"></div>
                                 <div class="swiper-slide sw-slide-3"></div>
@@ -180,26 +183,34 @@
                                 </div>
 
                             </div>
-                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-pagination sw-pagination-made">
+                                <span class="swiper-pagination-current">No.01</span>
+                                <span class="swiper-pagination-total"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- event -->
                 <div class="event">
-                    <div class="event-title"></div>
-                    <div class="event-list">
-                        <div class="event-wrap">
-                            <div class="event-desc">
-                                <!-- <h2>여름방학, 일취월장</h2>
-                                <p>언제 어디서나, 집중을 위한 필수템</p> -->
+                    <div class="event-wrap">
+                        <div class="event-title">
+                            <span>EVENT</span>
+                        </div>
+                        <div class="event-list">
+                            <div class="event-wrapper">
+                                <div class="event-bg">
+                                    <h2 class="event-bg-title">링크버즈 사고 버디하고!</h2>
+                                    <p class="event-bg-desc">링크버즈 구매 고객님께 드리는 특별한 혜택!</p>
+                                </div>
+                                <div class="event-swiper">
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                </div>
                             </div>
-                            <div class="event-swiper"></div>
                         </div>
-                        <div class="sub-event">
-                            <div class="sub-event-swiper"></div>
-                        </div>
+                        <a href="#">더 보러가기</a>
                     </div>
-                    <!-- <a href="#">더 보러가기</a> -->
                 </div>
                 <!-- product -->
                 <div class="product">
@@ -217,7 +228,6 @@
                 <div class="banner">
                     <div class="banner-wrap">
                         <div class="banner-title"></div>
-                        <!-- <a href="#">자세히 보기</a> -->
                     </div>
                 </div>
                 <!-- help -->
