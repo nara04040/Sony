@@ -23,8 +23,6 @@ $(document).ready(function () {
 
 
 window.onload = function () {
-
-
     //visual
     let swiperVisual = new Swiper('.sw-visual', {
         loop:true,
@@ -33,6 +31,19 @@ window.onload = function () {
             prevEl: '.swiper-button-prev'
         }
     })
+
+    // signature
+    let swiperSignatureLeft = new Swiper('.sw-signature-left', {
+        loop:true,
+    });
+
+    let swiperSignatureRight = new Swiper('.sw-signature-right', {
+        loop:true,
+    });
+
+    swiperSignatureLeft.controller.control = swiperSignatureRight;
+    swiperSignatureRight.controller.control = swiperSignatureLeft;
+
 
 
     // 마우스 따라다니기
