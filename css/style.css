@@ -102,7 +102,7 @@ body {
     color: #666;
     margin: 0 auto;
     overflow-x: hidden;
-    /* background-color: #000; */
+    background-color: #000;
 }
 
 /* 공통클래스 */
@@ -114,6 +114,12 @@ body {
     clear: both;
 }
 
+.inner {
+    position: relative;
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 
 /* header */
@@ -131,7 +137,7 @@ body {
 }
 
 
-.inner {
+.header .inner {
     position: relative;
     display: block;
     max-width: 1920px;
@@ -285,209 +291,117 @@ body {
 /* main */
 .main {
     width: 100%;
-
 }
 
 .main-wrap {
     width: 1920px;
     height: 100%;
     margin: 0 auto;
-
+    /* background-color: yellow; */
 }
 
 /* visual */
-
-.visual {
-    width: 100%;
-    height: 100%;
-}
-
-.visual-wrap {
+/* .visual .inner {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.sw-container {
-    position: relative;
+    display: block;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0;
+} */
+
+.swiper-container {
+    width: 100%;
 }
 
 .swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-
+    height: 1200px;
 }
 
 .swiper-slide {
+    overflow: hidden;
     height: calc(100vh - 80px);
-    max-height: 1100px;
     min-height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-height: 1200px;
     background-position: 50%;
+    background-size: cover;
 }
 
-.visual-slide-play {
+.sw-bg-1 {}
+
+.sw-video-1 {}
+
+.sw-bg-2 {}
+
+.sw-video-2 {
     width: 100%;
+    margin-top: 100px;
+}
+
+.sw-bg-3 {
+    position: relative;
+    display: block;
+    background: url('../images/visual_3.jpeg') no-repeat center;
     height: 100%;
-    object-fit: fill;
 }
 
-.v-size {
+.sw-bg-4 {
+    position: relative;
+    display: block;
+    background: url('../images/visual_4.jpeg') no-repeat center;
     height: 100%;
-}
-
-.video-desc {
-    width: 100%;
-}
-
-.swiper-button-next {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    transform: translate(-50%, -50%);
 }
 
 .swiper-pagination {
     position: absolute;
     left: auto;
-    right: 30px;
-    bottom: 35px;
+    right: 40px;
+    bottom: 40px;
     width: auto;
     font-size: 16px;
-    background-color: white;
 }
 
-
-
-/* signature */
-.signature {
-    position: relative;
-    height: 100%;
-}
-
-.signature-wrap {
-    position: relative;
-    background-color: pink;
-    width: 100%;
-}
-
-.sig-swiper-pic {
-    position: relative;
-    display: block;
-    float: left;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.sw-slide-1 {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 57vw;
-    background: url('../images/메인추천배너_01.jpg');
-    background-size: cover;
-}
-
-
-.sig-swiper-items {
-    position: relative;
-    display: block;
-    width: 50%;
-    height: 100%;
-    padding-left: 80px;
-}
-
-.sig-subslide-wrap {}
-
-.sw-subslide-1 {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 51.7vw;
-}
-
-.subslide-title {
-    position: relative;
-    display: block;
-    font-size: 48px;
+.swiper-pagination-current {
     font-weight: 700;
-    line-height: 1.2;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    color: #fff;
 }
 
-.subslide-img-wrap {
-    position: relative;
-    display: block;
-    width: 528px;
-    height: 528px;
-    background-color: #fff;
-}
-
-.subslide-img-1 {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url('../images/signature-items-1.png') no-repeat left;
-    background-size: cover;
-}
-
-.item-name {
-    margin-top: 16px;
-    line-height: 1.3;
-    font-size: 32px;
-    font-weight: 700;
-    color: #222;
-}
-
-.item-desc {
-    margin-top: 4px;
-    font-size: 18px;
+.swiper-pagination-total {
     color: #666;
 }
 
+.swiper-pagination-total::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    margin: 0 4px;
+    vertical-align: baseline;
+    background-color: #666;
+}
+
+
+/* signature */
+.signature {}
+
+.signature .inner {}
+
+.sw-control {}
+
+.sw-left {}
+
+.sw-bg-1 {}
+
+.sw-bg-2 {}
+
+.sw-bg-3 {}
+
+.sw-bg-4 {}
+
+
+
+
+
+
 /* event */
-.event {
-    position: relative;
-    display: block;
-    background-color: #fff;
-}
-
-.event-wrap {
-    position: relative;
-    display: block;
-    padding: 100px 28px;
-}
-
-.event-title {
-    display: block;
-    width: 150px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.event-title span {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    color: #000;
-}
-
-.event-list {
-    position: relative;
-    display: block;
-
-}
 
 /* product */
 

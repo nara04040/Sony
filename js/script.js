@@ -16,6 +16,15 @@ $(document).ready(function () {
     depth_1.mouseleave(function () {
         header.css('height', gnbMinHeight);
     });
+    
+
+})
+
+
+
+window.onload = function () {
+
+
     //visual
     let swiperVisual = new Swiper('.sw-visual', {
         loop:true,
@@ -26,18 +35,13 @@ $(document).ready(function () {
     })
 
 
-})
-
-
-
-window.onload = function () {
     // 마우스 따라다니기
-    const arrowBtn = document.querySelector('.swiper-button-next');
+    // const arrowBtn = document.querySelector('.swiper-button-next');
 
-    document.addEventListener('mousemove', (e) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        arrowBtn.style.left = mouseX + 'px';
-        arrowBtn.style.top = mouseY + 'px';
-    })
+    // document.addEventListener('mousemove', (e) => {
+    //     const mouseX = e.clientX;
+    //     const mouseY = e.clientY;
+    //     arrowBtn.style.left = mouseX + 'px';
+    //     arrowBtn.style.top = mouseY + 'px';
+    // })
 }
