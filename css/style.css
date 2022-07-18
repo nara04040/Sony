@@ -380,9 +380,7 @@ body {
 
 
 /* signature */
-.signature {
-    margin-bottom: 400px;
-}
+.signature {}
 
 .signature .inner {}
 
@@ -393,14 +391,14 @@ body {
 .sw-signature-left {
     display: inline-block;
     width: 49.9%;
-    background-color: red;
+    /* background-color: red; */
     margin: 0;
 }
 
 .sw-signature-right {
     display: inline-block;
     width: 49.9%;
-    background-color: blue;
+    background-color: #f4f4f4;
     margin: 0;
 }
 
@@ -471,6 +469,14 @@ body {
     color: #666;
 }
 
+.swiper-scrollbar {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 3px;
+    bottom: 0;
+    right: 20px;
+}
 
 /* event */
 
