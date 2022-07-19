@@ -679,6 +679,7 @@ $hoverColor : #5865f5;
                                     left: 48px;
                                     bottom: 48px;
                                     right: 48px;
+
                                     h3 {
                                         font-size: 40px;
                                         font-weight: 700;
@@ -707,46 +708,65 @@ $hoverColor : #5865f5;
         .product {
             padding: 116px 0 36px;
             background-color: #f4f4f4;
-            .inner{
-                .title{
+
+            .inner {
+                .title {
                     display: block;
                     font-size: 40px;
                     font-weight: 700;
                     text-align: center;
                     line-height: 1.4;
                     color: #222;
+                    margin-bottom: 30px;
                 }
-                .product-list{
-                    li{
+
+                .product-list {
+                    li {
+                        position: relative;
                         float: left;
                         width: calc(100% / 4);
-                        a{
+
+                        >a {
                             position: relative;
                             display: block;
                             width: 400px;
                             height: 400px;
                             font-size: 30px;
                             font-weight: 500;
-                            background-size: cover;
-                            background-position: 10vw 40px;
                             text-decoration: none;
                             transition: background .2s ease-out;
+                            padding: 500px 48px 52px;
+                            margin: 0;
                             &:hover {
-                                background-position-x: 50%;
+                                background-position-x: 40%;
                                 background-color: $hoverColor;
                             }
                         }
-                        .product-camera{
+
+
+                        .product-camera {
                             background: url('../images/main_prod_camera.24473fcf.png') no-repeat;
+                            background-size: 400px;
+                            background-position: 6vw 40px;
+                            
                         }
-                        .product-videocamera{
-                            background: url('../images/main_prod_camera.24473fcf.png') no-repeat;
+
+                        .product-videocamera {
+                            background: url('../images/main_prod_vcamera.7e8353a1.png') no-repeat;
+                            background-size: 400px;
+                            background-position: 6vw 40px;
                         }
-                        .product-audio{
-                            background: url('../images/main_prod_camera.24473fcf.png') no-repeat;
+
+                        .product-audio {
+                            background: url('../images/main_prod_audio.c1aa7b96.png') no-repeat;
+                            background-size: 400px;
+                            background-position: 6vw 40px;
                         }
-                        .product-playstation{
-                            background: url('../images/main_prod_camera.24473fcf.png') no-repeat;
+
+                        .product-playstation {
+                            background: url('../images/main_prod_ps.e4346725.png') no-repeat;
+                            background-size: 400px;
+                            background-position: 6vw 40px;
                         }
                     }
                 }
@@ -754,15 +774,125 @@ $hoverColor : #5865f5;
         }
 
         /* banner */
-        .banner {}
+        .banner {
+            position: relative;
+            display: block;
+            background: #f4f4f4 url('../images/banner-bg.png') no-repeat center;
+            width: 1920px;
+            height: 440px;
+            font-size: 20px;
+            background-position: 50% 0;
+            background-size: 100%;
+            padding-top: 200px;
+            text-align: center;
+            .banner-txt {
+                h2{
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    letter-spacing: -.025em;
+                    color: #222;
+                    margin-bottom: 20px;
+                }
+                a{
+                    color: #222;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    letter-spacing: -.025em;
+                    background: transparent;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 7px;
+                        height: 7px;
+                        border-top: 2px solid;
+                        border-right: 2px solid;
+                        margin-left: 5px;
+                        margin-bottom: 1px;
+                        transform: rotate(45deg) translateY(-20%);
+                    }
+                }
+            }
+        }
 
         /* help */
-        .help {}
+        .help {
+            padding: 47px 90px 38px;
+            background-color: #fff;
+            .inner{
+                .help-title{
+                    float: left;
+                    padding-top: 16px;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 1.4;
+                    letter-spacing: -.025em;
+                    color: #222;
+                }
+                .help-list{
+                    float: right;
+                    li{
+                        display: block;
+                        width: 160px;
+                        padding: 28px 16px;
+                        float: left;
+                        a {
+                            display: block;
+                            padding-top: 80px;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 1.5;
+                            letter-spacing: -.025em;
+                            color: #222;
+                            background-position: 50% 0;
+                            background-size: 56px;
+
+                        }
+                        .help-notice{
+                            background: url('../images/help-icon-1.svg') no-repeat center;
+                        }
+                        .help-location{
+                            background: url('../images/help-icon-1.svg') no-repeat center;
+                        }
+                        .help-customer{
+                            background: url('../images/help-icon-1.svg') no-repeat center;
+                        }
+                        .help-service{
+                            background: url('../images/help-icon-1.svg') no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
 
 
     }
 
     /* footer */
-    .footer {}
+    .footer {
+        z-index: 900;
+        padding-bottom: 64px;
+        color: #bbb;
+        background-color: #000;
+        .footer-wrap{
+            padding: 100px 90px;
+            .social-wrap{
+                .follow-sns{}
+                .family-company{
+                    .family-company-links{}
+                    .global-company{}
+                }
+            }
+            .legal{
+                .legal-list{}
+                .legal-warning{}
+            }
+            .sony-addr{
+                span{}
+            }
+        }
+    }
 
 }
