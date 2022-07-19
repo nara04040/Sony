@@ -3,8 +3,7 @@ $(document).ready(function () {
     let header = $('.header');
     let gnb = $('.gnb');
     let depth_1 = $('.depth1');
-    let depth_1_List = $('.depth1 > li')
-    let depthUnderLine = $('.depth1 > li::after')
+    let depth_1_List = $('.depth1 > li');
     let depth_2 = $('.depth2');
     let gnbMaxHeight = gnb.outerHeight();
     let gnbMinHeight = header.outerHeight();
