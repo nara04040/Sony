@@ -312,26 +312,218 @@ body {
   background-color: #666;
 }
 .wrap .main .signature {
-  background-color: blueviolet;
+  position: relative;
   max-width: 1920px;
-  min-height: 900px;
+  height: calc(100vh - 80px);
+  min-height: 940px;
   max-height: 1080px;
-  margin: 0 auto;
-  padding: 116px 0 116px calc(50% + 80px);
+  background-color: #f4f4f4;
+  overflow: hidden;
 }
 .wrap .main .signature .inner {
-  background-color: yellow;
-}
-.wrap .main .signature .inner .swiper > .sw-signature-left {
   position: relative;
   display: block;
-  width: 50%;
 }
-.wrap .main .signature .inner .swiper > .sw-signature-left > .swiper-wrapper .sig-bg-1 {
+.wrap .main .swiper {
+  display: initial;
+}
+.wrap .main .sw-signature-left {
+  display: inline-block;
+  width: 49.9%;
+  /* background-color: red; */
+}
+.wrap .main .sw-signature-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 49.9%;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+.wrap .main .sw-signature-right {
+  padding-left: 100px;
+}
+.wrap .main .slide-title {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow: hidden;
+  margin: 90px 0px;
+}
+.wrap .main .subsig-bg-1 {
   position: relative;
   display: block;
-  background: url("../images/signature-bg-1.jpeg") no-repeat center;
+  background: url("../images/signature-items-1.png") no-repeat center;
   background-size: cover;
-  width: 960px;
-  height: 1080px;
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+}
+.wrap .main .subsig-bg-2 {
+  position: relative;
+  display: block;
+  background: url("../images/signature-items-2.png") no-repeat center;
+  background-size: cover;
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+}
+.wrap .main .subsig-bg-3 {
+  position: relative;
+  display: block;
+  background: url("../images/signature-items-3.png") no-repeat center;
+  background-size: cover;
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+}
+.wrap .main .subsig-bg-4 {
+  position: relative;
+  display: block;
+  background: url("../images/signature-items-4.png") no-repeat center;
+  background-size: cover;
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+}
+.wrap .main .slide-subtitle {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #222;
+}
+.wrap .main .slide-txt {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #666;
+}
+.wrap .main .swiper-scrollbar {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 3px;
+  bottom: 0;
+  right: 20px;
+}
+.wrap .main .event .inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+.wrap .main .event .inner .event-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+.wrap .main .event .inner .event-items {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wrap .main .event .inner .event-items .event-items-1 > a {
+  background: url("../images/event-bg-1.jpeg") no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 1872px;
+  height: 608px;
+  padding: 150px 300px;
+  margin-bottom: 34px;
+}
+.wrap .main .event .inner .event-items .event-items-1 > a .items-index {
+  margin-top: 110px;
+}
+.wrap .main .event .inner .event-items .event-items-1 > a .items-index > h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  color: #222;
+}
+.wrap .main .event .inner .event-items .event-items-1 > a .items-index > p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #666;
+}
+.wrap .main .event .inner .event-items .event-items-list > li {
+  position: relative;
+  float: left;
+  width: 33.3333333333%;
+}
+.wrap .main .event .inner .event-items .event-items-list > li > a {
+  display: block;
+  width: 100%;
+}
+.wrap .main .event .inner .event-items .event-items-list > li > a .event-item-desc {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+  right: 48px;
+}
+.wrap .main .event .inner .event-items .event-items-list > li > a .event-item-desc h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.37;
+  letter-spacing: -0.025em;
+  color: #222;
+}
+.wrap .main .event .inner .event-items .event-items-list > li > a .event-item-desc p {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  color: #666;
+}
+.wrap .main .product {
+  padding: 116px 0 36px;
+  background-color: #f4f4f4;
+}
+.wrap .main .product .inner .title {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  color: #222;
+}
+.wrap .main .product .inner .product-list li {
+  float: left;
+  width: 25%;
+}
+.wrap .main .product .inner .product-list li a {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  background-size: cover;
+  background-position: 10vw 40px;
+  text-decoration: none;
+  transition: background 0.2s ease-out;
+}
+.wrap .main .product .inner .product-list li a:hover {
+  background-position-x: 50%;
+  background-color: #5865f5;
+}
+.wrap .main .product .inner .product-list li .product-camera {
+  background: url("../images/main_prod_camera.24473fcf.png") no-repeat;
+}
+.wrap .main .product .inner .product-list li .product-videocamera {
+  background: url("../images/main_prod_camera.24473fcf.png") no-repeat;
+}
+.wrap .main .product .inner .product-list li .product-audio {
+  background: url("../images/main_prod_camera.24473fcf.png") no-repeat;
+}
+.wrap .main .product .inner .product-list li .product-playstation {
+  background: url("../images/main_prod_camera.24473fcf.png") no-repeat;
 }/*# sourceMappingURL=main.css.map */
