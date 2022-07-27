@@ -56,8 +56,9 @@ img {
 }
 
 a {
-    color: black;
+    background: transparent;
     text-decoration: none;
+    color: inherit;
 }
 
 html {
@@ -615,6 +616,7 @@ $hoverColor : #5865f5;
                 height: 100%;
                 background-color: #fff;
                 padding: 20px;
+                padding-bottom: 100px;
                 padding-left: 20px;
                 padding-right: 25px;
 
@@ -699,7 +701,23 @@ $hoverColor : #5865f5;
                         }
                     }
 
-                    span {}
+                    span {
+                        position: relative;
+                        display: block;
+                        text-align: center;
+                        padding-top: 50px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #222;
+
+                        &::after {
+                            content: '+';
+                            color: #222;
+                            position: absolute;
+                            top: 61%;
+                            left: 53%;
+                        }
+                    }
                 }
             }
         }
@@ -737,6 +755,7 @@ $hoverColor : #5865f5;
                             transition: background .2s ease-out;
                             padding: 500px 48px 52px;
                             margin: 0;
+
                             &:hover {
                                 background-position-x: 40%;
                                 background-color: $hoverColor;
@@ -748,7 +767,7 @@ $hoverColor : #5865f5;
                             background: url('../images/main_prod_camera.24473fcf.png') no-repeat;
                             background-size: 400px;
                             background-position: 6vw 40px;
-                            
+
                         }
 
                         .product-videocamera {
@@ -785,8 +804,9 @@ $hoverColor : #5865f5;
             background-size: 100%;
             padding-top: 200px;
             text-align: center;
+
             .banner-txt {
-                h2{
+                h2 {
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 1.4;
@@ -794,13 +814,15 @@ $hoverColor : #5865f5;
                     color: #222;
                     margin-bottom: 20px;
                 }
-                a{
+
+                a {
                     color: #222;
                     font-size: 18px;
                     font-weight: 700;
                     line-height: 1.4;
                     letter-spacing: -.025em;
                     background: transparent;
+
                     &::after {
                         content: '';
                         display: inline-block;
@@ -820,8 +842,9 @@ $hoverColor : #5865f5;
         .help {
             padding: 47px 90px 38px;
             background-color: #fff;
-            .inner{
-                .help-title{
+
+            .inner {
+                .help-title {
                     float: left;
                     padding-top: 16px;
                     font-weight: 700;
@@ -830,13 +853,16 @@ $hoverColor : #5865f5;
                     letter-spacing: -.025em;
                     color: #222;
                 }
-                .help-list{
+
+                .help-list {
                     float: right;
-                    li{
+
+                    li {
                         display: block;
                         width: 160px;
                         padding: 28px 16px;
                         float: left;
+
                         a {
                             display: block;
                             padding-top: 80px;
@@ -850,16 +876,20 @@ $hoverColor : #5865f5;
                             background-size: 56px;
 
                         }
-                        .help-notice{
+
+                        .help-notice {
                             background: url('../images/help-icon-1.svg') no-repeat center;
                         }
-                        .help-location{
+
+                        .help-location {
                             background: url('../images/help-icon-1.svg') no-repeat center;
                         }
-                        .help-customer{
+
+                        .help-customer {
                             background: url('../images/help-icon-1.svg') no-repeat center;
                         }
-                        .help-service{
+
+                        .help-service {
                             background: url('../images/help-icon-1.svg') no-repeat center;
                         }
                     }
@@ -876,21 +906,47 @@ $hoverColor : #5865f5;
         padding-bottom: 64px;
         color: #bbb;
         background-color: #000;
-        .footer-wrap{
+
+        .footer-wrap {
             padding: 100px 90px;
-            .social-wrap{
-                .follow-sns{}
-                .family-company{
-                    .family-company-links{}
-                    .global-company{}
+
+            .social-wrap {
+                float: right;
+
+                .follow-sns {
+                    .follow-us {
+                        float: left;
+                        font-size: 24px;
+                    }
+                    .sns-icons{
+                        float: right;
+                        margin-left: 80px;
+                        a{
+                            margin-left: 40px;
+                            color: #bbb;
+                            &:first-child{
+                                margin-left: 0;
+                            }
+                            img{
+                            }
+                        }
+                    }
                 }
+                    .family-company {
+                        .family-company-links {}
+
+                        .global-company {}
+                    }
             }
-            .legal{
-                .legal-list{}
-                .legal-warning{}
+
+            .legal {
+                .legal-list {}
+
+                .legal-warning {}
             }
-            .sony-addr{
-                span{}
+
+            .sony-addr {
+                span {}
             }
         }
     }

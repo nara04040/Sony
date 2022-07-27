@@ -47,8 +47,9 @@ img {
 }
 
 a {
-  color: black;
+  background: transparent;
   text-decoration: none;
+  color: inherit;
 }
 
 html {
@@ -415,6 +416,7 @@ body {
   height: 100%;
   background-color: #fff;
   padding: 20px;
+  padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 25px;
 }
@@ -482,6 +484,22 @@ body {
   line-height: 1.4;
   letter-spacing: -0.025em;
   color: #666;
+}
+.wrap .main .event .inner .event-items span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+.wrap .main .event .inner .event-items span::after {
+  content: "+";
+  color: #222;
+  position: absolute;
+  top: 61%;
+  left: 53%;
 }
 .wrap .main .product {
   padding: 116px 0 36px;
@@ -630,4 +648,22 @@ body {
 }
 .wrap .footer .footer-wrap {
   padding: 100px 90px;
+}
+.wrap .footer .footer-wrap .social-wrap {
+  float: right;
+}
+.wrap .footer .footer-wrap .social-wrap .follow-sns .follow-us {
+  float: left;
+  font-size: 24px;
+}
+.wrap .footer .footer-wrap .social-wrap .follow-sns .sns-icons {
+  float: right;
+  margin-left: 80px;
+}
+.wrap .footer .footer-wrap .social-wrap .follow-sns .sns-icons a {
+  margin-left: 40px;
+  color: #bbb;
+}
+.wrap .footer .footer-wrap .social-wrap .follow-sns .sns-icons a:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=main.css.map */
